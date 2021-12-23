@@ -13,6 +13,6 @@ class ToDoList(models.Model):
         return f"{self.pk}. {self.description} - {self.status}"
 
     class Meta:
-        db_table = 'to_do_lists'
+        db_table = 'ToDoLists'
         verbose_name = "Список дел"
         verbose_name_plural = "Списки дел"
