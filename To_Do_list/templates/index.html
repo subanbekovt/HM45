@@ -17,7 +17,7 @@
     </div>
     <div class="row ">
         <div class="d-flex justify-content-end mb-3">
-            <a href="add/" class="btn btn-success me-3">Новая задача</a>
+            <a href="{% url 'add_view' %}" class="btn btn-success me-3">Новая задача</a>
         </div>
     </div>
     <div class="row">
@@ -28,7 +28,7 @@
                         <h5 class="card-title">{{ todo.pk }}. {{ todo.description }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ todo.status }}</h6>
                         <p class="card-text">{{ todo.due_date }}</p>
-                        <a href="/task/{{ todo.pk }}">Подробнее...</a>
+                        <a href="{% url "task_view" todo.pk %}">Подробнее...</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from To_Do_list.models import ToDoList
 from To_Do_list.models import STATUS_CHOICES
@@ -20,13 +20,11 @@ def add_view(request):
         if due_date == '':
             due_date = None
         entry = ToDoList.objects.create(description=description, status=status, due_date=due_date)
-        context = {
-            "entry": entry
-        }
-        return render(request, "one_entry.html", context)
+        return redirect('task_view', pk=entry.pk)
 
 
 def task_view(request, pk):
     task = ToDoList.objects.get(pk=pk)
     context = {"task": task}
     return render(request, "one_entry.html", context)
+
