@@ -6,11 +6,6 @@
             <h1 class="text-center mt-5 mb-5 text-primary">Список задач</h1>
         </div>
     </div>
-    <div class="row ">
-        <div class="d-flex justify-content-end mb-3">
-            <a href="{% url 'add_view' %}" class="btn btn-success me-3">Новая задача</a>
-        </div>
-    </div>
     <div class="row">
         {% for todo in todo %}
             <div class="col col-xl-3 mb-3">
