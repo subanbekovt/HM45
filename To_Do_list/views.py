@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from To_Do_list.models import ToDoList
 from To_Do_list.models import STATUS_CHOICES
@@ -24,7 +24,7 @@ def add_view(request):
 
 
 def task_view(request, pk):
-    task = ToDoList.objects.get(pk=pk)
+    task = get_object_or_404(ToDoList, pk=pk)
     context = {"task": task}
     return render(request, "one_entry.html", context)
 
