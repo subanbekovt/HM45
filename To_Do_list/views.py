@@ -17,9 +17,10 @@ def add_view(request):
         description = request.POST.get('description')
         status = request.POST.get('status')
         due_date = request.POST.get('due_date')
+        details = request.POST.get('details')
         if due_date == '':
             due_date = None
-        entry = ToDoList.objects.create(description=description, status=status, due_date=due_date)
+        entry = ToDoList.objects.create(description=description, status=status, due_date=due_date, details=details)
         return redirect('task_view', pk=entry.pk)
 
 

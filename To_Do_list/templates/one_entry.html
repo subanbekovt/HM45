@@ -1,5 +1,10 @@
 {% extends 'temp.html' %}
 {% block title %}Task {{ task.pk }}{% endblock %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'add_view' %}">Удалить задачу</a>
+    </li>
+{% endblock %}
 {% block body %}
     <div class="col mt-5">
         <div class="card h-100" style="width: 18rem;">
@@ -7,6 +12,7 @@
                 <h5 class="card-title">{{ task.pk }}. {{ task.description }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ task.status }}</h6>
                 <p class="card-text">{{ task.due_date }}</p>
+                <p>{{ task.details }}</p>
             </div>
         </div>
     </div>
