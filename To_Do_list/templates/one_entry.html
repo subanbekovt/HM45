@@ -10,8 +10,20 @@
         <div class="card h-100" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">{{ task.pk }}. {{ task.description }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ task.status }}</h6>
-                <p class="card-text">{{ task.due_date }}</p>
+                <div class="d-flex">
+                    <h6>Статус:</h6>
+                    <h6 class="card-subtitle m-0 ps-4 text-muted">{{ task.status }}</h6>
+                </div>
+                <div class="d-flex">
+                    <p>Дата выполнения:</p>
+                    <p class="card-text ps-3">
+                        {% if task.due_date is None %}
+                            -- -- --
+                            {% else %}
+                            {{ task.due_date|date:"Y-m-d" }}
+                        {% endif %}</p>
+                </div>
+
                 <p>{{ task.details }}</p>
             </div>
         </div>
