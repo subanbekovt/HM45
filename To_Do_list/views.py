@@ -16,20 +16,18 @@ def add_view(request):
     elif request.method == 'POST':
         description = request.POST.get('description')
         status = request.POST.get('status')
-        due_date = request.POST.get('status')
+        due_date = request.POST.get('due_date')
         if due_date == '':
             due_date = None
         entry = ToDoList.objects.create(description=description, status=status, due_date=due_date)
-        # context = {
-        #     "entry": entry
-        # }
-        return render(request, 'new.html')
-
-
-def new_entry(request):
-    return render(request, "one_entry.html")
+        context = {
+            "entry": entry
+        }
+        return render(request, "one_entry.html", context)
 
 
 def task_view(request):
-    todo = ToDoList.objects.order_by("status")
-    return render(request, 'one_entry.html', {{'todo': todo}})
+    pk = request.GET.get("pk")
+    task = ToDoList.objects.get(pk=pk)
+    context = {"task": task}
+    return render(request, "one_entry.html", context)

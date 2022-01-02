@@ -12,20 +12,27 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1 class="text-center mt-5 text-primary">Список задач</h1>
+            <h1 class="text-center mt-5 mb-5 text-primary">Список задач</h1>
         </div>
     </div>
-    <div class="row row-cols-4">
+    <div class="row ">
+        <div class="d-flex justify-content-end mb-3">
+            <a href="add/" class="btn btn-success me-3">Новая задача</a>
+        </div>
+    </div>
+    <div class="row">
         {% for todo in todo %}
-            <div class="col border border-primary">
-                <p>{{ todo.description }}</p>
-                <p>{{ todo.status }}</p>
-                <p>{{ todo.due_date }}</p>
+            <div class="col col-xl-3 mb-3">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ todo.pk }}. {{ todo.description }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ todo.status }}</h6>
+                        <p class="card-text">{{ todo.due_date }}</p>
+                        <a href="/task?pk={{ todo.pk }}">Подробнее...</a>
+                    </div>
+                </div>
             </div>
         {% endfor %}
-    </div>
-    <div class="row mt-5">
-        <a href="add/">Новая задача</a>
     </div>
 </div>
 
