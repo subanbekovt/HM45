@@ -26,8 +26,7 @@ def add_view(request):
         return render(request, "one_entry.html", context)
 
 
-def task_view(request):
-    pk = request.GET.get("pk")
+def task_view(request, pk):
     task = ToDoList.objects.get(pk=pk)
     context = {"task": task}
     return render(request, "one_entry.html", context)
