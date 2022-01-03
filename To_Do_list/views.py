@@ -29,3 +29,9 @@ def task_view(request, pk):
     context = {"task": task}
     return render(request, "one_entry.html", context)
 
+
+def del_view(request, pk):
+    task = ToDoList.objects.get(pk=pk)
+    task.delete()
+    return redirect('index_view')
+
