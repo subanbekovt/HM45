@@ -18,14 +18,17 @@
                     <p>Дата выполнения:</p>
                     <p class="card-text ps-3">
                         {% if task.due_date is None %}
-                            -- -- --
+                            <p>-- -- --</p>
                             {% else %}
                             {{ task.due_date|date:"Y-m-d" }}
                         {% endif %}</p>
                 </div>
-
-                <p>{{ task.details }}</p>
-            </div>
+                    {% if task.details is None %}
+                        <p>Описание отсутствует</p>
+                        {% else %}
+                        <p>{{ task.details }}</p>
+                    {% endif %}
+                </div>
         </div>
     </div>
 {% endblock %}

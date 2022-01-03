@@ -15,7 +15,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{ todo.status }}</h6>
                         <p class="card-text">
                         {% if todo.due_date is None %}
-                            -- -- --
+                            <p>-- -- --</p>
                             {% else %}
                             {{ todo.due_date|date:"Y-m-d" }}
                         {% endif %}</p>
