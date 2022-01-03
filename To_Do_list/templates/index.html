@@ -18,7 +18,8 @@
                             <p>-- -- --</p>
                             {% else %}
                             {{ todo.due_date|date:"Y-m-d" }}
-                        {% endif %}</p>
+                        {% endif %}
+                        </p>
                         <a href="{% url "task_view" todo.pk %}">Подробнее...</a>
                     </div>
                 </div>

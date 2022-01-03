@@ -7,7 +7,8 @@ from To_Do_list.models import STATUS_CHOICES
 # Create your views here.
 def index_view(request):
     todo = ToDoList.objects.order_by("status")
-    return render(request, 'index.html', {'todo': todo})
+    todo = ToDoList.objects.all()
+    return render(request, 'index.html', {'todo': todo, 'choice': STATUS_CHOICES})
 
 
 def add_view(request):

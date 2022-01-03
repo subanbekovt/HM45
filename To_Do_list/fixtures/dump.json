@@ -1,0 +1,282 @@
+[
+{
+    "model": "To_Do_list.todolist",
+    "pk": 1,
+    "fields": {
+        "description": "Купить подарки",
+        "status": "new",
+        "due_date": null,
+        "details": "Паравозик сыну, Dison жене, путевку Родителям"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 2,
+    "fields": {
+        "description": "Купить машину",
+        "status": "new",
+        "due_date": null,
+        "details": "Машину 2015 года, желательно не больше 10тыщ"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 3,
+    "fields": {
+        "description": "Привести в порядок дела",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 4,
+    "fields": {
+        "description": "Отдохнуть",
+        "status": "new",
+        "due_date": null,
+        "details": "Сьездить в Каракол"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 5,
+    "fields": {
+        "description": "Сделать покупки",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 6,
+    "fields": {
+        "description": "Сделать покупки",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 7,
+    "fields": {
+        "description": "Сделать покупки",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 8,
+    "fields": {
+        "description": "Сделать покупки",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 9,
+    "fields": {
+        "description": "Сделать покупки",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 10,
+    "fields": {
+        "description": "Сходить в поход",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 11,
+    "fields": {
+        "description": "apple",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 12,
+    "fields": {
+        "description": "Green",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 13,
+    "fields": {
+        "description": "Купить костюм",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 14,
+    "fields": {
+        "description": "Получить права",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 15,
+    "fields": {
+        "description": "Украсить ёлку",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 16,
+    "fields": {
+        "description": "Еше одна задача",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 17,
+    "fields": {
+        "description": "another task",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 18,
+    "fields": {
+        "description": "авыавыавыавы",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 19,
+    "fields": {
+        "description": "11111111",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 20,
+    "fields": {
+        "description": "22222222",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 21,
+    "fields": {
+        "description": "22222222",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 22,
+    "fields": {
+        "description": "3333333",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 23,
+    "fields": {
+        "description": "55555555",
+        "status": "new",
+        "due_date": null,
+        "details": null
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 24,
+    "fields": {
+        "description": "66666666666666",
+        "status": "new",
+        "due_date": null,
+        "details": "fdsgdgdsgdgfdgfd"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 25,
+    "fields": {
+        "description": "8888888888888888",
+        "status": "new",
+        "due_date": "2022-01-01",
+        "details": "rewrewrewrewrewrewre"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 26,
+    "fields": {
+        "description": "8888888888888888",
+        "status": "new",
+        "due_date": "2021-12-31",
+        "details": "rewrewrewrewrewrewre"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 27,
+    "fields": {
+        "description": "7777777777777",
+        "status": "new",
+        "due_date": "2021-12-31",
+        "details": "mvbcxzcdv bmvcbxvzcxvxbnm"
+    }
+},
+{
+    "model": "To_Do_list.todolist",
+    "pk": 29,
+    "fields": {
+        "description": "Еше одна задача",
+        "status": "new",
+        "due_date": null,
+        "details": "БЛалалалалалалала"
+    }
+}
+]
