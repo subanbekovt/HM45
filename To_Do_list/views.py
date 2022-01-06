@@ -41,8 +41,11 @@ def task_view(request, pk):
 
 def del_view(request, pk):
     task = ToDoList.objects.get(pk=pk)
-    task.delete()
-    return redirect('index_view')
+    if request.method == 'GET':
+        return render(request, 'task_delete.html', {'task': task})
+    else:
+        task.delete()
+        return redirect('index_view')
 
 
 def edit_view(request, pk):
