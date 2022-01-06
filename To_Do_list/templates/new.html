@@ -7,32 +7,7 @@
             <h1 class="mt-5">Новая задача</h1>
         </div>
     </div>
-    <div class="row row-cols-2 mt-3">
-        <form method="POST">
-        {% csrf_token %}
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Описание задачи</span>
-                <input type="text" class="form-control" name="description" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Статус</span>
-                <select class="form-select" name="status" aria-label="Default select example">
-                    {% for choice in status %}
-                        <option value="{{ choice.0 }}">{{ choice.1 }}</option>
-                {% endfor %}
-                </select>
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Дата выполнения</span>
-                <input type="text"  name="due_date">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Детали задачи</span>
-                <input type="text" class="form-control" name="details" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
-            </div>
-            <div class="d-flex flex-row">
-                <input type="submit" class="btn btn-primary ms-3"/>
-            </div>
-        </form>
-    </div>
+    <form method="POST">
+    {% include "partial/form.html" with button_text="Создать" %}
+    </form>
 {% endblock %}
