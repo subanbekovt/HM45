@@ -6,6 +6,6 @@ urlpatterns = [
     path('', index_view, name='index_view'),
     path('add/', add_view, name='add_view'),
     path('task/<int:pk>/', task_view, name='task_view'),
-    path('del/<int:pk>', del_view, name='del_view'),
-    path('edit/<int:pk>', edit_view, name='edit_view'),
+    path('del/<int:pk>/', del_view, name='del_view'),
+    path('edit/<int:pk>/', edit_view, name='edit_view'),
 ]
