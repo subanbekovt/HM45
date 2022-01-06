@@ -2,7 +2,7 @@
 {% block title %}Task {{ task.pk }}{% endblock %}
 {% block nav %}
     <li class="nav-item">
-        <a class="nav-link" href="{% url 'del_view' task.pk %}">Редактировать</a>
+        <a class="nav-link" href="{% url 'edit_view' task.pk %}">Редактировать</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{% url 'del_view' task.pk %}">Удалить задачу</a>
@@ -24,7 +24,8 @@
                             <p>-- -- --</p>
                             {% else %}
                             {{ task.due_date|date:"Y-m-d" }}
-                        {% endif %}</p>
+                        {% endif %}
+                    </p>
                 </div>
                     {% if task.details is None %}
                         <p>Описание отсутствует</p>

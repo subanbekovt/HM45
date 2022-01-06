@@ -44,3 +44,25 @@ def del_view(request, pk):
     task.delete()
     return redirect('index_view')
 
+
+def edit_view(request, pk):
+    task = ToDoList.objects.get(pk=pk)
+    if request.method == 'GET':
+        form = TaskForm(initial={'description': task.description,
+                                 'status': task.status,
+                                 'due_date': task.due_date,
+                                 'details': task.details})
+        return render(request, 'task_edit.html', {'task': task, 'form': form})
+    else:
+        form = TaskForm(data=request.POST)
+        if form.is_valid():
+            task.description = request.POST.get('description')
+            task.status = request.POST.get('status')
+            task.due_date = request.POST.get('due_date')
+            if task.due_date == '':
+                task.due_date = None
+            task.details = request.POST.get('details')
+            task.save()
+            return redirect("task_view", pk=task.pk)
+        return render(request, 'task_edit.html', {'task': task, 'form': form})
+
